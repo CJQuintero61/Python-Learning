@@ -1,7 +1,7 @@
 # This file prints basic stuff
 # 
 # author: CJ Quintero
-# last updated: 04/20/2025
+# last updated: 04/21/2025
 print("Hello World");
 print("This is my first python file!");
 
