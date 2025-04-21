@@ -10,6 +10,7 @@ isPythonFile = True
 price = 3.99
 name = "Example User"
 count = 5
+emptyString = ""
 
 # truncates 3.99 -> 3
 print("Here is a float casted to an int: ")
@@ -22,12 +23,13 @@ print(float(count))
 # concatenate strings
 print("Here is price casted to a string: " + str(price))
 
-# prints "<class 'bool'>" to the console
-print(type(isPythonFile))
+# get type of price then convert it to a string to concat
+print("Here is the type of <price>: " + str(type(price)))
 
-# you can also type cast to bool
-# false if the string is empty, true otherwise
+# returns true
+print("Here is a bool casted to a string: " + str(isPythonFile))
 
-# prints true
-print(bool(isPythonFile))
-
+# returns false
+# empty strings are FALSE if casted to a bool
+# true if the string is not empty 
+print("Here is an empty string casted to a bool: " + str(bool(emptyString)))
