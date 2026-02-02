@@ -45,5 +45,14 @@ else:
 
 # using 'w' mode to write to a file
 # will overwrite all existing content
-with open('test.txt', 'w') as file:
+with open('text.txt', 'w') as file:
     file.write('Phrase overwritten!')
+
+# using 'a' mode to append to a file
+with open('text.txt', 'a') as file:
+    file.write('\nThis line was appended.')
+
+# you can also format strings while writing
+pi = 3.141592653589793
+with open('text.txt', 'a') as file:
+    file.write(f'\nThe value of pi to 5 decimals is: {pi:.5f}')
