@@ -44,6 +44,6 @@ else:
     print('\noutput.txt already exists, skipping creation.')
 
 # using 'w' mode to write to a file
-# will overwrite the file if it already exists
-
-
+# will overwrite all existing content
+with open('test.txt', 'w') as file:
+    file.write('Phrase overwritten!')
