@@ -25,6 +25,8 @@ def main():
         # assert the algorithm works
         assert array == array_copy, f"Test {test_idx} failed: {array} != {array_copy}"
 
+        print(f"Test {test_idx} passed: {array} == {array_copy}")
+
 
 def quicksort(array, start_idx, end_idx) -> None:
     """
